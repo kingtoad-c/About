@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+}
+
+.highlight {
+    color: #00ffea;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00ffea;
+    color: #0d0d0d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0d0d0d;
+    color: #00ffea;
+    border: 2px solid #00ffea;
+}
+
+section {
+    margin: 60px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Glitch effect on text */
+.glitch {
+    position: relative;
+    font-size: 2rem;
+    color: #00ffea;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.glitch:before, .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #00ffea;
+    z-index: -1;
+    animation: glitch-anim 2s infinite linear;
+}
+
+.glitch:before {
+    left: 2px;
+    text-shadow: 2px 0px #ff00ff, -2px 0px #ff00ff;
+    animation-delay: -0.5s;
+}
+
+.glitch:after {
+    left: -2px;
+    text-shadow: -2px 0px #00ffea, 2px 0px #00ffea;
+    animation-delay: -1s;
+}
+
+/* Glitch animation */
+@keyframes glitch-anim {
+    0% { transform: translate(0); }
+    20% { transform: translate(-10px, -10px); }
+    40% { transform: translate(10px, 10px); }
+    60% { transform: translate(-5px, 5px); }
+    80% { transform: translate(5px, -5px); }
+    100% { transform: translate(0); }
+}
+
+/* Glitchy text effect for other elements */
+.glitch-text {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    display: inline-block;
+}
+
+.glitch-text:before, .glitch-text:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #00ffea;
+    z-index: -1;
+    animation: glitch-anim 2s infinite linear;
+}
+
+.glitch-text:before {
+    left: 2px;
+    text-shadow: 2px 0px #ff00ff, -2px 0px #ff00ff;
+    animation-delay: -0.5s;
+}
+
+.glitch-text:after {
+    left: -2px;
+    text-shadow: -2px 0px #00ffea, 2px 0px #00ffea;
+    animation-delay: -1s;
+}
+

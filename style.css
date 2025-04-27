@@ -15,8 +15,8 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: #00ffea;
-    color: #0d0d0d;
+    background: #0d0d0d;
+    color: #00ffea;
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
@@ -24,8 +24,8 @@ body {
 }
 
 .btn:hover {
-    background: #0d0d0d;
-    color: #00ffea;
+    background: #00ffea;
+    color: #0d0d0d;
     border: 2px solid #00ffea;
 }
 
